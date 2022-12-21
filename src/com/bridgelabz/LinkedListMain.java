@@ -71,6 +71,18 @@ public class LinkedListMain {
         linkList7.searchAndAdd(30,40);
         linkList7.show(); // Display Node elements
 
+        LinkedList<Integer> linkedList8=new LinkedList<>();
+        System.out.println("\n********* : Delete a Node in-between the linked List : **********");
+        linkedList8.push(70);
+        linkedList8.push(40); // Pop
+        linkedList8.push(30);
+        linkedList8.push(56);
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList8.show();  // Display Linked List
+        System.out.println("********** : Display linked list after delete the element : *********");
+        linkedList8.searchAndDelete(40);
+        linkedList8.show(); // Display Node Elements
+
     }
 }
 

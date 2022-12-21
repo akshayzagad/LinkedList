@@ -60,24 +60,41 @@ public class LinkedList<T> {
             newNode.next = temp;//40=?70
         }
     }
-    public void deleteFirstNode(){
+
+    public void deleteFirstNode() {
         if (head == null) {
             System.out.println("linkList is null");
         } else {
-            head=head.next;
+            head = head.next;
         }
     }
-    public void deleteLastNode(){
-        Node<T> firstNode=head;
-        Node<T> secondNode=head.next;
+
+    public void deleteLastNode() {
+        Node<T> firstNode = head;
+        Node<T> secondNode = head.next;
         if (head == null) {
             System.out.println("linkList is null");
-        } else{
-            while (secondNode.next!=null){
-            secondNode=secondNode.next;
-            firstNode=firstNode.next;
+        } else {
+            while (secondNode.next != null) {
+                secondNode = secondNode.next;
+                firstNode = firstNode.next;
             }
-            firstNode.next=null;
+            firstNode.next = null;
+        }
+    }
+
+    public void searchAndDelete(T key) {//70=30=40=56
+        Node<T> deleteNode = searchNode(key);//40node
+        Node<T> temp = head;//30Node
+        while (temp != null) {
+            if (temp == deleteNode) {
+                head = deleteNode.next;
+                break;
+            } else if (temp.next == deleteNode) {//40=40
+                temp.next = deleteNode.next;//56
+                deleteNode.next = null;//
+            }
+            temp = temp.next;
         }
     }
 }
