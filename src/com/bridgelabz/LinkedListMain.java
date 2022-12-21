@@ -25,6 +25,30 @@ public class LinkedListMain {
         System.out.println("******** : Display linked list insert a node in between : *******");
         linkedList3.searchAndAdd(56,30);
         linkedList3.show(); // Display Node elements
+
+
+        LinkedList<Integer> linkedList4=new LinkedList<>();
+        System.out.println("\n********* : Delete a Node from head using pop method : **********");
+        linkedList4.push(70);
+        linkedList4.push(30);
+        linkedList4.push(56); // Head Node Delete
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList4.show();  // Display Node Elements
+        System.out.println("********** : Display linked list after delete the element : *********");
+         linkedList4.deleteFirstNode(); // Delete a head node
+        linkedList4.show(); // Display Node Elements
+
+
+        LinkedList<Integer> linkedList5=new LinkedList<>();
+        System.out.println("\n********* : Delete a Node from tail using popLast method : **********");
+        linkedList5.push(70); // Tail Node Delete
+        linkedList5.push(30);
+        linkedList5.push(56);
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList5.show();  // Display Node Elements
+        System.out.println("********** : Display linked list after delete the element : *********");
+        linkedList5.deleteLastNode();
+        linkedList5.show(); // Display Node Elements
     }
 
 
