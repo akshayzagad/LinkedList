@@ -35,4 +35,17 @@ public class LinkedList<T> {
             tail=newNode;
         }
     }
+
+    public Node<T> searchNode(T key){
+        Node<T> temp=head;
+        while (temp!=null){
+            if (temp.key==key){
+                return temp;
+            }else {
+                temp=temp.next;
+            }
+        }
+        return null;
+    }
+
 }
