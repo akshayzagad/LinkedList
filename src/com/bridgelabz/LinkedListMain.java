@@ -16,18 +16,18 @@ public class LinkedListMain {
         linkedList2.show();
         System.out.println(linkedList2.searchNode(30));
 
-        LinkedList<Integer> linkedList3=new LinkedList<>();
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
         System.out.println("\n******** : Insert a node in between : *********");
         linkedList3.append(56);
         linkedList3.append(70);
         System.out.println("********** : Display linked list without insert : *********");
         linkedList3.show(); // Display Node elements
         System.out.println("******** : Display linked list insert a node in between : *******");
-        linkedList3.searchAndAdd(56,30);
+        linkedList3.searchAndAdd(56, 30);
         linkedList3.show(); // Display Node elements
 
 
-        LinkedList<Integer> linkedList4=new LinkedList<>();
+        LinkedList<Integer> linkedList4 = new LinkedList<>();
         System.out.println("\n********* : Delete a Node from head using pop method : **********");
         linkedList4.push(70);
         linkedList4.push(30);
@@ -35,11 +35,11 @@ public class LinkedListMain {
         System.out.println("********** : Display linked list without delete : *********");
         linkedList4.show();  // Display Node Elements
         System.out.println("********** : Display linked list after delete the element : *********");
-         linkedList4.deleteFirstNode(); // Delete a head node
+        linkedList4.deleteFirstNode(); // Delete a head node
         linkedList4.show(); // Display Node Elements
 
 
-        LinkedList<Integer> linkedList5=new LinkedList<>();
+        LinkedList<Integer> linkedList5 = new LinkedList<>();
         System.out.println("\n********* : Delete a Node from tail using popLast method : **********");
         linkedList5.push(70); // Tail Node Delete
         linkedList5.push(30);
@@ -49,7 +49,17 @@ public class LinkedListMain {
         System.out.println("********** : Display linked list after delete the element : *********");
         linkedList5.deleteLastNode();
         linkedList5.show(); // Display Node Elements
+
+        LinkedList<Integer> linkedList6 = new LinkedList<>();
+        System.out.println("\n********* : Display the Linked List Elements for Search operation : **********");
+        linkedList6.push(70);
+        linkedList6.push(30); // Search a node
+        linkedList6.push(56);
+        linkedList6.show();  // Display Node Elements
+        if (linkedList6.searchNode(30) == null)
+            System.out.println("Searched element not found!!!");
+        else System.out.println("Searched element found! in the Linked List");
+
     }
-
-
 }
+
