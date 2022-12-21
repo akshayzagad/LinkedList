@@ -16,7 +16,15 @@ public class LinkedListMain {
         linkedList2.show();
         System.out.println(linkedList2.searchNode(30));
 
-
+        LinkedList<Integer> linkedList3=new LinkedList<>();
+        System.out.println("\n******** : Insert a node in between : *********");
+        linkedList3.append(56);
+        linkedList3.append(70);
+        System.out.println("********** : Display linked list without insert : *********");
+        linkedList3.show(); // Display Node elements
+        System.out.println("******** : Display linked list insert a node in between : *******");
+        linkedList3.searchAndAdd(56,30);
+        linkedList3.show(); // Display Node elements
     }
 
 
