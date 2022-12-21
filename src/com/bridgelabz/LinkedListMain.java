@@ -60,6 +60,17 @@ public class LinkedListMain {
             System.out.println("Searched element not found!!!");
         else System.out.println("Searched element found! in the Linked List");
 
+        LinkedList<Integer> linkList7=new LinkedList<>();
+        System.out.println("\n******** : Insert a node After the element in between : *********");
+        linkList7.append(56);
+        linkList7.append(30); // Insert Node after 30 Node
+        linkList7.append(70);
+        System.out.println("********** : Display linked list without insert After Node : *********");
+        linkList7.show(); // Display Node elements
+        System.out.println("******** : Display linked list insert After a node in between : *******");
+        linkList7.searchAndAdd(30,40);
+        linkList7.show(); // Display Node elements
+
     }
 }
 
